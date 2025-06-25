@@ -3,41 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exemplo de Redimensionamento de Texto</title>
+  <title>Blog Acessível - Redimensionamento</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Redimensionamento de Texto e Zoom</h1>
-    <p>Este exemplo demonstra acessibilidade conforme critérios WCAG 1.4.4 e 1.4.10.</p>
+    <h1>Blog Acessível</h1>
+    <p>Critérios WCAG 1.4.4 e 1.4.10 em prática</p>
+    <div class="font-controls" role="group" aria-label="Controles de Fonte">
+      <button onclick="ajustarFonte('aumentar')" aria-label="Aumentar texto">A+</button>
+      <button onclick="ajustarFonte('diminuir')" aria-label="Diminuir texto">A−</button>
+      <button onclick="ajustarFonte('padrao')" aria-label="Redefinir texto">A</button>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Sobre a WCAG</h2>
-      <p>
-        Os critérios 1.4.4 e 1.4.10 garantem que pessoas possam aumentar o texto em até 200%
-        sem perda de conteúdo ou funcionalidade. Esta página respeita isso.
-      </p>
-    </section>
+    <article>
+      <h2>Zoom e Refluxo em Páginas Web</h2>
 
-    <section>
-      <h2>Exemplo prático</h2>
-      <p>
-        Você pode usar o <strong>Ctrl + Scroll</strong> ou <strong>Ctrl + + / -</strong> no teclado
-        para aumentar/diminuir o zoom. Experimente agora e veja que todo o conteúdo continua
-        acessível e legível.
-      </p>
-      <p>
-        O layout também se adapta ao tamanho da janela ou ao zoom do navegador, respeitando o "reflow".
-      </p>
-    </section>
+      <h3>WCAG, 1.4.4 (Redimensionamento de Texto (nível AA))</h3>
 
-    <button>Ação acessível</button>
+      <p>
+        Todas as pessoas devem conseguir ampliar o conteúdo em até 200%
+        sem perder acesso às funcionalidades e conteúdo.
+      </p>
+
+      <h3>WCAG 1.4.10 (Refluxo (Reflow) (nível AA))</h3>
+
+      <p>
+        Ela estabelece que o conteúdo deve ser apresentável sem a necessidade de rolagem 
+        bidimensional (horizontal e vertical) para visualizá-lo, quando ampliado em até 400%. Com exceção de layouts bidimencionais 
+        (como mapas, tabelas de dados ou imagens muito grandes).
+      </p>
+
+      <p>
+        Teste esta página usando os controles acima ou utilizando
+        <strong>Ctrl + + / -</strong> ou <strong>Ctrl + Scroll</strong>.
+      </p>
+      <p>
+        Este conteúdo também se ajusta ao tamanho da tela, mesmo em celulares e ao aplicar zoom.
+      </p>
+    </article>
+
+    <article>
+      <h2>Notícia de Última Hora</h2>
+      <p>
+        A acessibilidade digital está ganhando destaque entre desenvolvedores. Grandes portais,
+        como G1 e UOL, estão cada vez mais preocupados com o acesso universal à informação.
+      </p>
+      <p>
+        Estudos apontam que usuários com deficiência representam um público com alto potencial de engajamento,
+        desde que o conteúdo seja apresentado de forma inclusiva.
+      </p>
+    </article>
   </main>
 
-  <footer>
-    <p>Feito por Diogo Barboza — Acessibilidade na prática</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

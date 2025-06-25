@@ -1,45 +1,69 @@
-:root {
-  font-size: 100%; /* 1rem = 16px padrão */
+/* WCAG 1.4.4 */
+html {
+  font-size: 100%; /* base: 16px */
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  padding: 1rem;
   margin: 0;
-  color: #111;
-  background-color: #f9f9f9;
-}
-
-h1, h2 {
-  color: #005aa7;
-}
-
-header, main, footer {
-  max-width: 700px;
-  margin: auto;
-}
-
-button {
+  padding: 0;
   font-size: 1rem;
-  padding: 0.75rem 1.5rem;
-  background: #005aa7;
+  background-color: #fafafa;
+  color: #222;
+}
+
+header {
+  background: #c4170c;
   color: white;
-  border: none;
-  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.font-controls {
+  margin-top: 0.5rem;
+}
+
+.font-controls button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+  background-color: white;
+  color: #c4170c;
+  border: 1px solid #fff;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-button:focus {
-  outline: 3px solid #ffa500;
+.font-controls button:hover {
+  background-color: #eee;
 }
 
-@media (max-width: 600px) {
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+article {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* WCAG 1.4.10 */
+@media screen and (max-width: 600px) {
   body {
-    font-size: 1.125rem;
+    padding: 0.5rem;
   }
 
-  button {
-    width: 100%;
+  .font-controls button {
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 0.5rem;
   }
 }
