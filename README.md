@@ -57,10 +57,13 @@ Para garantir que seu site seja realmente acessível e cumpra os critérios WCAG
 - Estrutura de arquivos:
   
  ```
+/img
+├── futuro.png
+├── games.png
+├── Inovação Acessível Smartphones para Todos.png
 index.html
 script.js
 style.css
-
  ```
 
 ### ✅ Passo a Passo
