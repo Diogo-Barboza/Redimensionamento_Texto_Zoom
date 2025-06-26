@@ -8,5 +8,6 @@ function ajustarFonte(acao) {
   } else if (acao === 'padrao') {
     tamanhoFonte = 1;
   }
-  document.body.style.fontSize = `${tamanhoFonte}rem`;
+  // document.body.style.fontSize = `${tamanhoFonte}rem`;
+  document.querySelector('.root').style.fontSize = `${tamanhoFonte}rem`;
 }
